@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>myservlet</servlet-name>
+        <servlet-class>Controllers.WelcomePage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myservlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>indexservlet</servlet-name>
+        <servlet-class>Controllers.IndexPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexservlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>wrongpage</servlet-name>
+        <servlet-class>Controllers.WrongAccountPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wrongpage</servlet-name>
+        <url-pattern>/wrongaccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userpage</servlet-name>
+        <servlet-class>Controllers.UserPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userpage</servlet-name>
+        <url-pattern>/userpage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminpage</servlet-name>
+        <servlet-class>Controllers.AdminPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminpage</servlet-name>
+        <url-pattern>/adminpage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>wrongrole</servlet-name>
+        <servlet-class>Controllers.WrongRolePage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wrongrole</servlet-name>
+        <url-pattern>/wrongrole</url-pattern>
+    </servlet-mapping>
+</web-app>
